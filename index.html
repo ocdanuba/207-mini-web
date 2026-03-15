@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Page</title>
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <p>My Personal Page</p>
+            <h1>About Me</h1>
+            <nav>
+                <ul>
+                    <li>What's in this website:</li>
+                    <li class="selected">Home</li>
+                    <!--a tags have no href links yet-->
+                    <li><a>Puzzles</a></li>
+                    <li><a>Programming</a></li>
+                    <li><a>Food and Cooking</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <!--Introduction paragraphs-->
+            <h1>Hello, Visitor!</h1>
+            <p>Welcome to my personal page.</p>
+            <p>My name is <strong>Orly Czar D. Anuba</strong>. A student of the Diploma of Computer Science (DCS) program of the University of the Philippines Open University (UPOU).</p>
+            <p>Nice to meet you.</p>
+            <p>Feel free to explore and remember to enjoy.</p>
+            <p>My website merely reflects all the things that I'm interested in.</p>
+            <p>Just see everything there is to see here and leave afterwards.</p>
+            <p>I hope you enjoy!</p>
+            <br>
+            <h2>Sneak Peek of the Contents:</h2>
+            <section>
+                <h3>Puzzles</h3>
+                <!--Script for swapping the sudoku puzzle from the sudoku solution-->
+                <p><img class="small" id="display-image" onclick="swapImage()" src="images/sudoku23.jpg" alt="Sudoku Puzzle" width="180" height="180"/></p>
+                <script>
+                    function swapImage() {
+                        var imageDisplayed = document.getElementById('display-image');
+                        if (imageDisplayed.src.match("images/sudoku23.jpg")) {
+                            imageDisplayed.src = "images/sudokuanswer.jpg";
+                        }
+                        else {
+                            imageDisplayed.src = "images/sudoku23.jpg";
+                        }
+                    }
+                </script>
+                <p>This section contains the kinds of puzzles that I like.</p>
+                <p>This particular puzzle is Sudoku, a popular logic number puzzle whose goal is to fill the grid with the numbers so that each row, column, and 3x3 grid contains the digits 1-9 only once.</p>
+                <p>You can solve this one if you want <i>(on paper that is).</i></p>
+                <br>
+                <p><b>Click the image to reveal the solution!</b></p>
+            </section>
+            <section class="short">
+                <h3>Programming</h3>
+                <p>This section contains the programming topics that I have learned, and <i>optionally, present some portfolio of coding projects (not sure).</i></p>
+            </section>
+            <section class="short">
+                <h3>Food and Cooking</h3>
+                <p>Well, this section seems different from the others. It's the food and cooking section. Cooking still involves trial and error, so it is included here.</p>
+                <p>This section shows the recipes that I have learned, tried, and liked.</p>
+            </section>
+        </article>
+        <aside>
+            <section>
+                <p><img class="id-pic" src="images/img-001.jpg" alt="Personal ID Picture"/></p>
+                <h2>Orly Czar D. Anuba, CPA</h2>
+                <h3>Basic Information:</h3>
+                <ul>
+                    <li><strong>Birthdate:</strong> November 8, 1994</li>
+                    <br>
+                    <li><strong>Gender:</strong> Male</li>
+                    <br>
+                    <li><strong>Civil Status:</strong> Married</li>
+                    <br>
+                    <li><strong>Current Occupation:</strong> Government Employee</li>
+                    <br>
+                    <li><strong>Professional Certification:</strong> Certified Public Accountant (CPA)</li>
+                    <br>
+                    <li><strong>Address:</strong> Kidapawan City, Cotabato</li>
+                    <br>
+                    <li><strong>Interest:</strong> puzzles, programming, cooking</li>
+                    <br>
+                </ul>
+            </section>
+            <section class="short">
+                <h3>Contact Information:</h3>
+                <ul>
+                    <li><strong>E-mail Address:</strong> <a href="mailto:oanuba.null@gmail.com">oanuba.null@gmail.com</a></li>
+                    <br>
+                    <li><strong>UP E-mail:</strong> <a href="mailto:odanuba@up.edu.ph">odanuba@up.edu.ph</a></li>
+                </ul>
+            </section>
+        </aside>
+        <footer>
+            <h5 class="notice">* This website is created for the purpose of the CMSC 207 mini-project for the DCS program in UPOU.</h5>
+        </footer>
+    </body>
+</html>
